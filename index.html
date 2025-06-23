@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Digi.co</title>
+  <style>
+    * {
+      margin: 0; padding: 0; box-sizing: border-box;
+      font-family: Arial, sans-serif;
+    }
+
+    body {
+      line-height: 1.6;
+    }
+
+    header, section, footer {
+      padding: 20px;
+    }
+
+    /* Navbar */
+    #navbar {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-items: center;
+      background-color: #333;
+      padding: 10px 20px;
+    }
+
+    #navbar a {
+      color: white;
+      text-decoration: none;
+      margin: 10px;
+    }
+
+    #navbar input {
+      padding: 5px;
+    }
+
+    #navbar button {
+      padding: 6px 10px;
+      background-color: #007bff;
+      border: none;
+      color: white;
+      cursor: pointer;
+    }
+
+    #logo {
+      font-size: 1.4em;
+      font-weight: bold;
+    }
+
+    /* Hero */
+    .hero {
+      background-color: #f4f4f4;
+      text-align: center;
+      padding: 60px 20px;
+    }
+
+    .btn {
+      display: inline-block;
+      margin-top: 20px;
+      padding: 10px 20px;
+      background-color: #007bff;
+      color: white;
+      text-decoration: none;
+      border-radius: 4px;
+    }
+
+    /* About */
+    .about-content {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      align-items: center;
+    }
+
+    .about-content img {
+      max-width: 100%;
+      width: 300px;
+      border-radius: 8px;
+    }
+
+    .about-text {
+      flex: 1;
+    }
+
+    /* Services */
+    .service-items {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      justify-content: center;
+      margin-top: 20px;
+    }
+
+    .service {
+      flex: 1 1 300px;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      padding: 15px;
+      background-color: #fafafa;
+    }
+
+    .service img {
+      width: 100%;
+      height: auto;
+      border-radius: 6px;
+    }
+
+    /* Contact */
+    form {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 10px;
+      margin-top: 20px;
+    }
+
+    form input, form textarea {
+      width: 100%;
+      max-width: 500px;
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+
+    /* Footer */
+    footer {
+      text-align: center;
+      background-color: #222;
+      color: white;
+      padding: 15px 0;
+      margin-top: 30px;
+    }
+
+    /* Responsive */
+    @media (max-width: 768px) {
+      .about-content {
+        flex-direction: column;
+        text-align: center;
+      }
+
+      #navbar {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+      #navbar a, #navbar input, #navbar button {
+        margin: 5px 0;
+      }
+
+      .service-items {
+        flex-direction: column;
+        align-items: center;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <div id="navbar">
+    <a id="logo" href="#">Digi.co</a>
+    <a href="#home">Home</a>
+    <a href="#about">About</a>
+    <a href="#services">Services</a>
+    <a href="#contact">Contact</a>
+    <input type="text" placeholder="Search Digi.co">
+    <button>Search</button>
+  </div>
+</header>
+
+<header id="home" class="hero">
+  <div class="container">
+    <h1>Welcome to Digi.co</h1>
+    <p><i>"Transforming Your Digital Presence. From stunning websites to powerful Shopify stores and targeted digital marketing, Digi.co brings your business online and helps it thrive. Let’s digitize your success!"</i></p>
+    <a href="#services" class="btn">Explore Services</a>
+  </div>
+</header>
+
+<section id="about" class="about">
+  <h2 align="center">About Us</h2>
+  <div class="about-content container">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQa81_oY745K94ssenXvbEsAEqMkR1OCif7Lg&s" alt="About Us">
+    <div class="about-text">
+      <p>
+        Our team combines creativity, technical know-how, and market insights to help businesses thrive digitally. <br><br>
+        <b>Search Engine Optimization (SEO):</b> On-page SEO, Off-page SEO<br>
+        <b>Social Media Marketing:</b> Content Creation, Community Management<br>
+        <b>Content Marketing:</b> Blogging, Infographics
+      </p>
+    </div>
+  </div>
+</section>
+
+<section id="services" class="services">
+  <h2 align="center">Our Services</h2>
+  <div class="service-items container">
+    <div class="service">
+      <img src="https://static.vecteezy.com/system/resources/previews/005/732/506/non_2x/man-hand-holding-smart-phone-digital-marketing-word-with-icon-business-virtual-screen-free-photo.jpg" alt="Digital Marketing">
+      <h3 align="center">Digital Marketing</h3>
+      <p>Boost your brand with SEO, SMM, content marketing, and more.</p>
+    </div>
+    <div class="service">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTfR_wXY_wfL4ABAJARer3cGwJ6WOtwGzLKKA&s" alt="E-commerce & Shopify">
+      <h3 align="center">E-commerce & Shopify</h3>
+      <p>We build high-performing Shopify and custom e-commerce platforms optimized for mobile and conversion.</p>
+    </div>
+    <div class="service">
+      <img src="https://t3.ftcdn.net/jpg/08/71/60/32/360_F_871603234_fTMmjlUOpt4F9mDudj8wjyzkt0khEtSZ.jpg" alt="Web Development">
+      <h3 align="center">Web Development</h3>
+      <p>From responsive websites to full-stack web apps using modern technologies like React, Node.js, and more.</p>
+    </div>
+  </div>
+</section>
+
+<section id="contact" class="contact">
+  <h2 align="center">Contact Us</h2>
+  <form>
+    <input type="text" name="name" placeholder="Your Name" required />
+    <input type="email" name="email" placeholder="Your Email" required />
+    <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+    <button type="submit" class="btn">Send Message</button>
+  </form>
+</section>
+
+<footer>
+  &copy; 2025 Digi.co. All rights reserved.
+</footer>
+
+</body>
+</html>
